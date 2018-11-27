@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30197E2C20CC34D00088E726 /* EigenvalueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30197E2B20CC34D00088E726 /* EigenvalueViewController.swift */; };
+		301FBD0520CD7C1D0041EF80 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FBD0420CD7C1D0041EF80 /* InformationViewController.swift */; };
+		301FBD0720CD8EE70041EF80 /* InformationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FBD0620CD8EE70041EF80 /* InformationScreen.swift */; };
+		301FBD0E20CDA08E0041EF80 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FBD0C20CDA08E0041EF80 /* NewTableViewCell.swift */; };
+		301FBD0F20CDA08E0041EF80 /* NewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301FBD0D20CDA08E0041EF80 /* NewTableViewCell.xib */; };
+		302324EB20BF052800250E3E /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302324EA20BF052800250E3E /* DeveloperViewController.swift */; };
+		302EB314214FBAE50036EFF8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302EB311214FBADE0036EFF8 /* SnapKit.framework */; };
+		302EB315214FBAE50036EFF8 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 302EB311214FBADE0036EFF8 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3038FFCD20C245A900CB8512 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038FFCC20C245A900CB8512 /* GuideViewController.swift */; };
+		303ABAB820C14F64001A1E31 /* TraceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303ABAB720C14F64001A1E31 /* TraceViewController.swift */; };
+		3040DFFE20C684C0001507BF /* MinimalPolynomialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040DFFD20C684C0001507BF /* MinimalPolynomialViewController.swift */; };
+		305616E821A2FCAF001D8FF0 /* HessenbergViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305616E721A2FCAF001D8FF0 /* HessenbergViewController.swift */; };
+		305616EB21A309B5001D8FF0 /* QRdecompositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305616EA21A309B5001D8FF0 /* QRdecompositionViewController.swift */; };
+		305616ED21A309F1001D8FF0 /* Keyboard3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305616EC21A309F1001D8FF0 /* Keyboard3.swift */; };
+		307583A620B9A55400AE0C02 /* CalculatorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307583A520B9A55400AE0C02 /* CalculatorEngine.swift */; };
+		30829D4320A3E79A00B14F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30829D4220A3E79A00B14F3B /* AppDelegate.swift */; };
+		30829D4820A3E79A00B14F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30829D4620A3E79A00B14F3B /* Main.storyboard */; };
+		30829D4A20A3E79C00B14F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30829D4920A3E79C00B14F3B /* Assets.xcassets */; };
+		30829D4D20A3E79C00B14F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30829D4B20A3E79C00B14F3B /* LaunchScreen.storyboard */; };
+		3088DB2420A412E8001103DF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB2320A412E8001103DF /* MenuViewController.swift */; };
+		3088DB2820A4133E001103DF /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB2720A4133E001103DF /* Keyboard.swift */; };
+		3088DB2E20A41395001103DF /* TransposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB2D20A41395001103DF /* TransposeViewController.swift */; };
+		3088DB3020A413C4001103DF /* MultiplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB2F20A413C4001103DF /* MultiplicationViewController.swift */; };
+		3088DB3220A414F2001103DF /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB3120A414F2001103DF /* AdditionViewController.swift */; };
+		3088DB3420A415A5001103DF /* SubtractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB3320A415A5001103DF /* SubtractionViewController.swift */; };
+		3088DB3620A415FF001103DF /* InverseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB3520A415FF001103DF /* InverseViewController.swift */; };
+		3088DB3820A41A93001103DF /* DeterminantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB3720A41A93001103DF /* DeterminantViewController.swift */; };
+		3088DB3B20A41EAE001103DF /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB3A20A41EAE001103DF /* RankViewController.swift */; };
+		3088DB3D20A41EEA001103DF /* SingleMatrixScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB3C20A41EEA001103DF /* SingleMatrixScreen.swift */; };
+		3088DB4320A41F69001103DF /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088DB4220A41F69001103DF /* Buttons.swift */; };
+		308C333820BC2CE1008E5813 /* LinearEquationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308C333720BC2CE1008E5813 /* LinearEquationsViewController.swift */; };
+		309EE72520BBDB3900066D77 /* Keyboard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EE72420BBDB3900066D77 /* Keyboard2.swift */; };
+		30B1403D20E10B0800B7F866 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1403C20E10B0800B7F866 /* Matrix.swift */; };
+		30BAD11820DD5F7400C913FE /* EigenScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAD11720DD5F7400C913FE /* EigenScreen.swift */; };
+		30BE3BBC20CE79480014B3B0 /* SavedMatrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE3BBB20CE79480014B3B0 /* SavedMatrices.swift */; };
+		30D00F4F20DE69B5003EC486 /* JordanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D00F4E20DE69B5003EC486 /* JordanViewController.swift */; };
+		30DDC3D520D91727003E8D5D /* AdjointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DDC3D420D91727003E8D5D /* AdjointViewController.swift */; };
+		30DE96F620B83C1E0051FCED /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE96F520B83C1E0051FCED /* PopAnimator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		302EB310214FBADE0036EFF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302EB30B214FBADE0036EFF8 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		302EB312214FBADE0036EFF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302EB30B214FBADE0036EFF8 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		302EB316214FBAE50036EFF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302EB30B214FBADE0036EFF8 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30D1FF9F214FBA2100A7F641 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				302EB315214FBAE50036EFF8 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		30197E2B20CC34D00088E726 /* EigenvalueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EigenvalueViewController.swift; sourceTree = "<group>"; };
+		301FBD0420CD7C1D0041EF80 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		301FBD0620CD8EE70041EF80 /* InformationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationScreen.swift; sourceTree = "<group>"; };
+		301FBD0C20CDA08E0041EF80 /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
+		301FBD0D20CDA08E0041EF80 /* NewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTableViewCell.xib; sourceTree = "<group>"; };
+		302324EA20BF052800250E3E /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
+		302EB30B214FBADE0036EFF8 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SnapKit.xcodeproj; sourceTree = "<group>"; };
+		3038FFCC20C245A900CB8512 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		303ABAB720C14F64001A1E31 /* TraceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceViewController.swift; sourceTree = "<group>"; };
+		3040DFFD20C684C0001507BF /* MinimalPolynomialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalPolynomialViewController.swift; sourceTree = "<group>"; };
+		305616E721A2FCAF001D8FF0 /* HessenbergViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HessenbergViewController.swift; sourceTree = "<group>"; };
+		305616EA21A309B5001D8FF0 /* QRdecompositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRdecompositionViewController.swift; sourceTree = "<group>"; };
+		305616EC21A309F1001D8FF0 /* Keyboard3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard3.swift; sourceTree = "<group>"; };
+		307583A520B9A55400AE0C02 /* CalculatorEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorEngine.swift; sourceTree = "<group>"; };
+		30829D3F20A3E79A00B14F3B /* Linear Algebra Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linear Algebra Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30829D4220A3E79A00B14F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30829D4720A3E79A00B14F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30829D4920A3E79C00B14F3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30829D4C20A3E79C00B14F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30829D4E20A3E79C00B14F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3088DB2320A412E8001103DF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3088DB2720A4133E001103DF /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		3088DB2D20A41395001103DF /* TransposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransposeViewController.swift; sourceTree = "<group>"; };
+		3088DB2F20A413C4001103DF /* MultiplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationViewController.swift; sourceTree = "<group>"; };
+		3088DB3120A414F2001103DF /* AdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
+		3088DB3320A415A5001103DF /* SubtractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionViewController.swift; sourceTree = "<group>"; };
+		3088DB3520A415FF001103DF /* InverseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InverseViewController.swift; sourceTree = "<group>"; };
+		3088DB3720A41A93001103DF /* DeterminantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeterminantViewController.swift; sourceTree = "<group>"; };
+		3088DB3A20A41EAE001103DF /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		3088DB3C20A41EEA001103DF /* SingleMatrixScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMatrixScreen.swift; sourceTree = "<group>"; };
+		3088DB4220A41F69001103DF /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		308C333720BC2CE1008E5813 /* LinearEquationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearEquationsViewController.swift; sourceTree = "<group>"; };
+		309EE72420BBDB3900066D77 /* Keyboard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard2.swift; sourceTree = "<group>"; };
+		30B1403C20E10B0800B7F866 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = SOURCE_ROOT; };
+		30BAD11720DD5F7400C913FE /* EigenScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EigenScreen.swift; sourceTree = "<group>"; };
+		30BE3BBB20CE79480014B3B0 /* SavedMatrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMatrices.swift; sourceTree = "<group>"; };
+		30D00F4E20DE69B5003EC486 /* JordanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanViewController.swift; sourceTree = "<group>"; };
+		30DDC3D420D91727003E8D5D /* AdjointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjointViewController.swift; sourceTree = "<group>"; };
+		30DE96F520B83C1E0051FCED /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30829D3C20A3E79A00B14F3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302EB314214FBAE50036EFF8 /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		302EB30C214FBADE0036EFF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				302EB311214FBADE0036EFF8 /* SnapKit.framework */,
+				302EB313214FBADE0036EFF8 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30829D3620A3E79A00B14F3B = {
+			isa = PBXGroup;
+			children = (
+				302EB30B214FBADE0036EFF8 /* SnapKit.xcodeproj */,
+				30829D4120A3E79A00B14F3B /* Linear Algebra Calculator */,
+				30829D4020A3E79A00B14F3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30829D4020A3E79A00B14F3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30829D3F20A3E79A00B14F3B /* Linear Algebra Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30829D4120A3E79A00B14F3B /* Linear Algebra Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				30B1403C20E10B0800B7F866 /* Matrix.swift */,
+				30829D4220A3E79A00B14F3B /* AppDelegate.swift */,
+				3038FFCC20C245A900CB8512 /* GuideViewController.swift */,
+				3088DB2320A412E8001103DF /* MenuViewController.swift */,
+				3088DB2D20A41395001103DF /* TransposeViewController.swift */,
+				3088DB2F20A413C4001103DF /* MultiplicationViewController.swift */,
+				3088DB3120A414F2001103DF /* AdditionViewController.swift */,
+				3088DB3320A415A5001103DF /* SubtractionViewController.swift */,
+				3088DB3520A415FF001103DF /* InverseViewController.swift */,
+				3088DB3720A41A93001103DF /* DeterminantViewController.swift */,
+				3088DB3A20A41EAE001103DF /* RankViewController.swift */,
+				308C333720BC2CE1008E5813 /* LinearEquationsViewController.swift */,
+				303ABAB720C14F64001A1E31 /* TraceViewController.swift */,
+				3040DFFD20C684C0001507BF /* MinimalPolynomialViewController.swift */,
+				30197E2B20CC34D00088E726 /* EigenvalueViewController.swift */,
+				30DDC3D420D91727003E8D5D /* AdjointViewController.swift */,
+				30D00F4E20DE69B5003EC486 /* JordanViewController.swift */,
+				305616E721A2FCAF001D8FF0 /* HessenbergViewController.swift */,
+				305616EA21A309B5001D8FF0 /* QRdecompositionViewController.swift */,
+				301FBD0420CD7C1D0041EF80 /* InformationViewController.swift */,
+				302324EA20BF052800250E3E /* DeveloperViewController.swift */,
+				30829D4620A3E79A00B14F3B /* Main.storyboard */,
+				30829D4920A3E79C00B14F3B /* Assets.xcassets */,
+				30829D4B20A3E79C00B14F3B /* LaunchScreen.storyboard */,
+				30829D4E20A3E79C00B14F3B /* Info.plist */,
+				3088DB2720A4133E001103DF /* Keyboard.swift */,
+				309EE72420BBDB3900066D77 /* Keyboard2.swift */,
+				305616EC21A309F1001D8FF0 /* Keyboard3.swift */,
+				3088DB3C20A41EEA001103DF /* SingleMatrixScreen.swift */,
+				30BAD11720DD5F7400C913FE /* EigenScreen.swift */,
+				3088DB4220A41F69001103DF /* Buttons.swift */,
+				307583A520B9A55400AE0C02 /* CalculatorEngine.swift */,
+				30DE96F520B83C1E0051FCED /* PopAnimator.swift */,
+				301FBD0620CD8EE70041EF80 /* InformationScreen.swift */,
+				301FBD0C20CDA08E0041EF80 /* NewTableViewCell.swift */,
+				301FBD0D20CDA08E0041EF80 /* NewTableViewCell.xib */,
+				30BE3BBB20CE79480014B3B0 /* SavedMatrices.swift */,
+			);
+			path = "Linear Algebra Calculator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30829D3E20A3E79A00B14F3B /* Linear Algebra Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30829D5120A3E79C00B14F3B /* Build configuration list for PBXNativeTarget "Linear Algebra Calculator" */;
+			buildPhases = (
+				30829D3B20A3E79A00B14F3B /* Sources */,
+				30829D3C20A3E79A00B14F3B /* Frameworks */,
+				30829D3D20A3E79A00B14F3B /* Resources */,
+				30D1FF9F214FBA2100A7F641 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				302EB317214FBAE50036EFF8 /* PBXTargetDependency */,
+			);
+			name = "Linear Algebra Calculator";
+			productName = "Linear Algebra Calculator";
+			productReference = 30829D3F20A3E79A00B14F3B /* Linear Algebra Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30829D3720A3E79A00B14F3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "UCAS Developers";
+				TargetAttributes = {
+					30829D3E20A3E79A00B14F3B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 30829D3A20A3E79A00B14F3B /* Build configuration list for PBXProject "Linear Algebra Calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30829D3620A3E79A00B14F3B;
+			productRefGroup = 30829D4020A3E79A00B14F3B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 302EB30C214FBADE0036EFF8 /* Products */;
+					ProjectRef = 302EB30B214FBADE0036EFF8 /* SnapKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				30829D3E20A3E79A00B14F3B /* Linear Algebra Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		302EB311214FBADE0036EFF8 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 302EB310214FBADE0036EFF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		302EB313214FBADE0036EFF8 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = 302EB312214FBADE0036EFF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30829D3D20A3E79A00B14F3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30829D4D20A3E79C00B14F3B /* LaunchScreen.storyboard in Resources */,
+				30829D4A20A3E79C00B14F3B /* Assets.xcassets in Resources */,
+				301FBD0F20CDA08E0041EF80 /* NewTableViewCell.xib in Resources */,
+				30829D4820A3E79A00B14F3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30829D3B20A3E79A00B14F3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301FBD0520CD7C1D0041EF80 /* InformationViewController.swift in Sources */,
+				307583A620B9A55400AE0C02 /* CalculatorEngine.swift in Sources */,
+				305616E821A2FCAF001D8FF0 /* HessenbergViewController.swift in Sources */,
+				3088DB2E20A41395001103DF /* TransposeViewController.swift in Sources */,
+				30BAD11820DD5F7400C913FE /* EigenScreen.swift in Sources */,
+				3088DB3620A415FF001103DF /* InverseViewController.swift in Sources */,
+				3088DB3B20A41EAE001103DF /* RankViewController.swift in Sources */,
+				30DE96F620B83C1E0051FCED /* PopAnimator.swift in Sources */,
+				3040DFFE20C684C0001507BF /* MinimalPolynomialViewController.swift in Sources */,
+				301FBD0720CD8EE70041EF80 /* InformationScreen.swift in Sources */,
+				30197E2C20CC34D00088E726 /* EigenvalueViewController.swift in Sources */,
+				308C333820BC2CE1008E5813 /* LinearEquationsViewController.swift in Sources */,
+				30DDC3D520D91727003E8D5D /* AdjointViewController.swift in Sources */,
+				305616EB21A309B5001D8FF0 /* QRdecompositionViewController.swift in Sources */,
+				305616ED21A309F1001D8FF0 /* Keyboard3.swift in Sources */,
+				3088DB3220A414F2001103DF /* AdditionViewController.swift in Sources */,
+				30D00F4F20DE69B5003EC486 /* JordanViewController.swift in Sources */,
+				3088DB3020A413C4001103DF /* MultiplicationViewController.swift in Sources */,
+				303ABAB820C14F64001A1E31 /* TraceViewController.swift in Sources */,
+				3088DB3420A415A5001103DF /* SubtractionViewController.swift in Sources */,
+				3088DB4320A41F69001103DF /* Buttons.swift in Sources */,
+				301FBD0E20CDA08E0041EF80 /* NewTableViewCell.swift in Sources */,
+				30BE3BBC20CE79480014B3B0 /* SavedMatrices.swift in Sources */,
+				3088DB3D20A41EEA001103DF /* SingleMatrixScreen.swift in Sources */,
+				3038FFCD20C245A900CB8512 /* GuideViewController.swift in Sources */,
+				30829D4320A3E79A00B14F3B /* AppDelegate.swift in Sources */,
+				3088DB3820A41A93001103DF /* DeterminantViewController.swift in Sources */,
+				309EE72520BBDB3900066D77 /* Keyboard2.swift in Sources */,
+				3088DB2420A412E8001103DF /* MenuViewController.swift in Sources */,
+				3088DB2820A4133E001103DF /* Keyboard.swift in Sources */,
+				30B1403D20E10B0800B7F866 /* Matrix.swift in Sources */,
+				302324EB20BF052800250E3E /* DeveloperViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		302EB317214FBAE50036EFF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = 302EB316214FBAE50036EFF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30829D4620A3E79A00B14F3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30829D4720A3E79A00B14F3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30829D4B20A3E79C00B14F3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30829D4C20A3E79C00B14F3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30829D4F20A3E79C00B14F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30829D5020A3E79C00B14F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30829D5220A3E79C00B14F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCDKQLH452;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Linear Algebra Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codery.LACalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		30829D5320A3E79C00B14F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCDKQLH452;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = "Linear Algebra Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codery.LACalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30829D3A20A3E79A00B14F3B /* Build configuration list for PBXProject "Linear Algebra Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30829D4F20A3E79C00B14F3B /* Debug */,
+				30829D5020A3E79C00B14F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30829D5120A3E79C00B14F3B /* Build configuration list for PBXNativeTarget "Linear Algebra Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30829D5220A3E79C00B14F3B /* Debug */,
+				30829D5320A3E79C00B14F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30829D3720A3E79A00B14F3B /* Project object */;
+}
