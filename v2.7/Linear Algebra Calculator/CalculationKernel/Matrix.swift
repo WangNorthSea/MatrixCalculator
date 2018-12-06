@@ -2568,14 +2568,18 @@ extension Matrix {
         let diagAllZeroCheck = isDiagAllZero(matrix)
         var recursion = matrix
         var count = 1
+        var offsetCount: Double = 0;
         var Q: Matrix = Matrix.init(rows: 1, columns: 1, repeatedValue: 0)
         var R: Matrix = Matrix.init(rows: 1, columns: 1, repeatedValue: 0)
         var result: [Double] = []
         
         if diagAllZeroCheck == true {
-            for i in 1...recursion.rows {
-                recursion[i, i] -= 1
-            }
+            repeat {
+                offsetCount += 1
+                for i in 1...recursion.rows {
+                    recursion[i, i] -= 1
+                }
+            } while recursion.rank() != recursion.columns
         }
         
         while count != 2001 {
@@ -2586,7 +2590,7 @@ extension Matrix {
         
         if diagAllZeroCheck == true {
             for i in 1...recursion.rows {
-                recursion[i, i] += 1
+                recursion[i, i] += offsetCount
             }
         }
         

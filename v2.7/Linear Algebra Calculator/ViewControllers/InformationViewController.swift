@@ -64,7 +64,7 @@ class InformationViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        let string = " Copyright © 2018  Haoyu Wang\n University of Chinese Academy of Sciences\n App Icon provided by Xim\n v2.6"
+        let string = " Copyright © 2018  Haoyu Wang\n University of Chinese Academy of Sciences\n App Icon provided by Xim\n v2.7"
         if section == 0 {
             return ""
         }

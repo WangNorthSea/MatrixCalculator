@@ -119,7 +119,7 @@
 		3088DB4220A41F69001103DF /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		308C333720BC2CE1008E5813 /* LinearEquationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearEquationsViewController.swift; sourceTree = "<group>"; };
 		309EE72420BBDB3900066D77 /* Keyboard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard2.swift; sourceTree = "<group>"; };
-		30B1403C20E10B0800B7F866 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = SOURCE_ROOT; };
+		30B1403C20E10B0800B7F866 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Matrix.swift; path = "Linear Algebra Calculator/CalculationKernel/Matrix.swift"; sourceTree = SOURCE_ROOT; };
 		30BAD11720DD5F7400C913FE /* EigenScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EigenScreen.swift; sourceTree = "<group>"; };
 		30BE3BBB20CE79480014B3B0 /* SavedMatrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMatrices.swift; sourceTree = "<group>"; };
 		30D00F4E20DE69B5003EC486 /* JordanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanViewController.swift; sourceTree = "<group>"; };
@@ -168,8 +168,56 @@
 		30829D4120A3E79A00B14F3B /* Linear Algebra Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				30B1403C20E10B0800B7F866 /* Matrix.swift */,
+				3097AFC321B923D000985217 /* Animation */,
+				3097AFC421B923D900985217 /* CalculationKernel */,
+				3097AFC521B923E400985217 /* Views */,
+				3097AFC621B923E900985217 /* ViewControllers */,
 				30829D4220A3E79A00B14F3B /* AppDelegate.swift */,
+				30829D4620A3E79A00B14F3B /* Main.storyboard */,
+				30829D4920A3E79C00B14F3B /* Assets.xcassets */,
+				30829D4B20A3E79C00B14F3B /* LaunchScreen.storyboard */,
+				30829D4E20A3E79C00B14F3B /* Info.plist */,
+			);
+			path = "Linear Algebra Calculator";
+			sourceTree = "<group>";
+		};
+		3097AFC321B923D000985217 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				30DE96F520B83C1E0051FCED /* PopAnimator.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		3097AFC421B923D900985217 /* CalculationKernel */ = {
+			isa = PBXGroup;
+			children = (
+				30B1403C20E10B0800B7F866 /* Matrix.swift */,
+				307583A520B9A55400AE0C02 /* CalculatorEngine.swift */,
+			);
+			path = CalculationKernel;
+			sourceTree = "<group>";
+		};
+		3097AFC521B923E400985217 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3088DB2720A4133E001103DF /* Keyboard.swift */,
+				309EE72420BBDB3900066D77 /* Keyboard2.swift */,
+				305616EC21A309F1001D8FF0 /* Keyboard3.swift */,
+				3088DB3C20A41EEA001103DF /* SingleMatrixScreen.swift */,
+				30BAD11720DD5F7400C913FE /* EigenScreen.swift */,
+				3088DB4220A41F69001103DF /* Buttons.swift */,
+				301FBD0620CD8EE70041EF80 /* InformationScreen.swift */,
+				301FBD0C20CDA08E0041EF80 /* NewTableViewCell.swift */,
+				301FBD0D20CDA08E0041EF80 /* NewTableViewCell.xib */,
+				30BE3BBB20CE79480014B3B0 /* SavedMatrices.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3097AFC621B923E900985217 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				3038FFCC20C245A900CB8512 /* GuideViewController.swift */,
 				3088DB2320A412E8001103DF /* MenuViewController.swift */,
 				3088DB2D20A41395001103DF /* TransposeViewController.swift */,
@@ -189,24 +237,8 @@
 				305616EA21A309B5001D8FF0 /* QRdecompositionViewController.swift */,
 				301FBD0420CD7C1D0041EF80 /* InformationViewController.swift */,
 				302324EA20BF052800250E3E /* DeveloperViewController.swift */,
-				30829D4620A3E79A00B14F3B /* Main.storyboard */,
-				30829D4920A3E79C00B14F3B /* Assets.xcassets */,
-				30829D4B20A3E79C00B14F3B /* LaunchScreen.storyboard */,
-				30829D4E20A3E79C00B14F3B /* Info.plist */,
-				3088DB2720A4133E001103DF /* Keyboard.swift */,
-				309EE72420BBDB3900066D77 /* Keyboard2.swift */,
-				305616EC21A309F1001D8FF0 /* Keyboard3.swift */,
-				3088DB3C20A41EEA001103DF /* SingleMatrixScreen.swift */,
-				30BAD11720DD5F7400C913FE /* EigenScreen.swift */,
-				3088DB4220A41F69001103DF /* Buttons.swift */,
-				307583A520B9A55400AE0C02 /* CalculatorEngine.swift */,
-				30DE96F520B83C1E0051FCED /* PopAnimator.swift */,
-				301FBD0620CD8EE70041EF80 /* InformationScreen.swift */,
-				301FBD0C20CDA08E0041EF80 /* NewTableViewCell.swift */,
-				301FBD0D20CDA08E0041EF80 /* NewTableViewCell.xib */,
-				30BE3BBB20CE79480014B3B0 /* SavedMatrices.swift */,
 			);
-			path = "Linear Algebra Calculator";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
