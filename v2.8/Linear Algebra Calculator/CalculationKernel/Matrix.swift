@@ -2594,6 +2594,36 @@ extension Matrix {
             }
         }
         
+        /*for i in 1...recursion.rows {
+            
+            if i == 1 {
+                result.append(recursion[i, i])
+            }
+            else if !result.contains(recursion[i, i]) {
+                result.append(recursion[i, i])
+            }
+        }*/
+        
+        // processing error
+        for i in 0..<recursion.grid.count {
+            if fabs(recursion.grid[i]) - fabs(Double(Int(recursion.grid[i]))) <= 0.01 || fabs(recursion.grid[i]) - (fabs(Double(Int(recursion.grid[i]))) + 1) <= 0.01 || fabs(recursion.grid[i]) - (fabs(Double(Int(recursion.grid[i]))) - 1) <= 0.01 {
+                if fabs(recursion.grid[i]) - fabs(Double(Int(recursion.grid[i]))) <= 0.01 && fabs(recursion.grid[i]) - fabs(Double(Int(recursion.grid[i]))) >= -0.01 {
+                    recursion.grid[i] = Double(Int(recursion.grid[i]))
+                }
+                else if fabs(recursion.grid[i]) - (fabs(Double(Int(recursion.grid[i]))) + 1) <= 0.01 && fabs(recursion.grid[i]) - (fabs(Double(Int(recursion.grid[i]))) + 1) >= -0.01 {
+                    if recursion.grid[i] < 0 {
+                        recursion.grid[i] = Double(Int(recursion.grid[i])) - 1
+                    }
+                    else {
+                        recursion.grid[i] = Double(Int(recursion.grid[i])) + 1
+                    }
+                }
+                else if fabs(recursion.grid[i]) - (fabs(Double(Int(recursion.grid[i]))) - 1) <= 0.01 && fabs(recursion.grid[i]) - (fabs(Double(Int(recursion.grid[i]))) - 1) >= -0.01 {
+                    recursion.grid[i] = Double(Int(recursion.grid[i])) + 1
+                }
+            }
+        }
+        
         for i in 1...recursion.rows {
             
             if i == 1 {
@@ -2604,27 +2634,7 @@ extension Matrix {
             }
         }
         
-        // processing error
-        for i in 0..<result.count {
-            if fabs(result[i]) - fabs(Double(Int(result[i]))) <= 0.01 || fabs(result[i]) - (fabs(Double(Int(result[i]))) + 1) <= 0.01 || fabs(result[i]) - (fabs(Double(Int(result[i]))) - 1) <= 0.01 {
-                if fabs(result[i]) - fabs(Double(Int(result[i]))) <= 0.01 && fabs(result[i]) - fabs(Double(Int(result[i]))) >= -0.01 {
-                    result[i] = Double(Int(result[i]))
-                }
-                else if fabs(result[i]) - (fabs(Double(Int(result[i]))) + 1) <= 0.01 && fabs(result[i]) - (fabs(Double(Int(result[i]))) + 1) >= -0.01 {
-                    if result[i] < 0 {
-                        result[i] = Double(Int(result[i])) - 1
-                    }
-                    else {
-                        result[i] = Double(Int(result[i])) + 1
-                    }
-                }
-                else if fabs(result[i]) - (fabs(Double(Int(result[i]))) - 1) <= 0.01 && fabs(result[i]) - (fabs(Double(Int(result[i]))) - 1) >= -0.01 {
-                    result[i] = Double(Int(result[i])) + 1
-                }
-            }
-        }
-        
-        var loop = 0
+        /*var loop = 0
         
         for i in 0..<result.count {
             if i == result.count {
@@ -2643,7 +2653,7 @@ extension Matrix {
                 }
             }
             loop += 1
-        }
+        }*/
         
         return result
     }
@@ -2770,6 +2780,8 @@ extension Matrix {
         var matrixJMinus1: Matrix = Matrix.init(rows: 1, columns: 1, repeatedValue: 0)
         var identityMatrix = Matrix.init(rows: matrix.rows, columns: matrix.columns, repeatedValue: 0)
         var twoDimensionalArrayForEachEigenValue: [[Int]] = []
+        
+        print(eigenValueArray)
         
         for i in 1...identityMatrix.rows {
             identityMatrix[i, i] = 1
